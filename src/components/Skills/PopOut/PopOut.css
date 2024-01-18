@@ -1,0 +1,50 @@
+
+  .popout {
+    font-family: Futura, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    /* font-size: 80px; */
+    padding: 5px; 
+  }
+  
+  .popout span {
+    position: relative;
+    display: inline-block;
+    animation: ani 1s infinite alternate cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  }
+  
+  @keyframes ani {
+    0% {
+      transform: translate3d(0, 0, 0);
+      text-shadow: 0em 0em 0 #7d3aed;
+      color: white;
+    }
+    30% {
+      transform: translate3d(0, 0, 0);
+      text-shadow: 0em 0em 0 #7d3aed;
+      color: white;
+    }
+    70% {
+      transform: translate3d(0.08em, -0.08em, 0);
+      text-shadow: -0.08em 0.08em #7d3aed;
+      color: white;
+    }
+    100% {
+      transform: translate3d(0.08em, -0.08em, 0);
+      text-shadow: -0.08em 0.08em #7d3aed;
+      color: white;
+    }
+  }
+  
+  .popout span:nth-last-child(3n) {
+    animation-delay: -0.5s;
+  }
+  
+  .popout span:nth-last-child(2n) {
+    animation-delay: -0.25s;
+  }
+  
+  .popout span:nth-last-child(1n) {
+    animation-delay: 0s;
+  }
+  

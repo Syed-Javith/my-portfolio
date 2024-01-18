@@ -1,0 +1,13 @@
+.icon:hover{
+    transform: scaleY(1.025);
+    padding: 0px;
+}
+.icon{
+    padding: 10px;
+}
+@media (width < 800px){
+    .icons{
+        flex-direction: column;
+    align-items: center;
+    }
+}

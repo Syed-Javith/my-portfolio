@@ -1,0 +1,11 @@
+
+.bg-black{
+    background-color: rgba(0, 0, 0,0.7)!important;
+    --bs-bg-opacity: 0.7
+}
+a.nav-link{
+    color: rgba(255, 255, 255,0.7);
+}
+a.nav-link:hover{
+    color: #fff;
+}
