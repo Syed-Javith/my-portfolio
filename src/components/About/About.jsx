@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 const About = () => {
   return (
-    <div id="about"  className="education my-4">
+    <div id="about"  className="education my-4 h-screen">
       <h2 className="text-center text-violet-500 my-4">Education</h2>
     <div className="timeline">
       <div className="container left">

@@ -8,6 +8,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 function App() {
   useEffect(()=>{
     AOS.init();
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Skills />
       <Projects />
+      <Footer />
     </div>
   );
 }

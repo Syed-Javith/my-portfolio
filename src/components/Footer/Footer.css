@@ -1,0 +1,8 @@
+footer .social li{
+    display: flex;
+    gap : 1rem;
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+}
