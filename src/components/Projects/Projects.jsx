@@ -5,6 +5,7 @@ import { project } from '../../assets/data/project'
 const Projects = () => {
   return (
     <div id="projects" className="container">
+      <h2 className="text-center text-violet-500 my-4">Projects</h2>
         <div className="row">
           {
             project.map((p,i) => {
