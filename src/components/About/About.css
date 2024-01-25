@@ -116,21 +116,22 @@
   }
   
   .timeline .container .content {
-    padding: 30px 90px 30px 30px;
+    padding: 30px 70px 30px 30px;
     background-color: rgba(0, 0, 0, 0.316);
     position: relative;
     border-radius: 0 500px 500px 0;
   }
   
   .timeline .container.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 30px 30px 30px 70px;
     border-radius: 500px 0 0 500px;
   }
   
   .timeline .container .content h2 {
     margin: 0 0 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     color: #7d3aed;
+    text-align: center;
   }
   
   .timeline .container .content p {
@@ -183,7 +184,7 @@
   
     .timeline .container.left .content,
     .timeline .container.right .content {
-      padding: 30px 30px 30px 90px;
+      padding: 30px 14px 30px 70px;
       border-radius: 500px 0 0 500px;
     }
   }
