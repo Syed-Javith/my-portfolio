@@ -2,7 +2,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div id="contact" className="bg-violet-500">
-      <footer className="container py-4">
+      <footer className="container py-4 mx-auto">
         <div className="row">
           <div className="col-lg-4">
             <h3>Syed Javith</h3>
