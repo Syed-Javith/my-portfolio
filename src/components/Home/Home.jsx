@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h3>Known Languages</h3>
+        <h3 className="text-violet-500 pb-4">Known Languages</h3>
         <div className="flex flex-row gap-4 flex-wrap">   
             {
               lang.map((l) => {

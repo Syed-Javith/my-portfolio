@@ -1,3 +1,4 @@
+import { PhoneCallIcon } from "lucide-react";
 import "./Footer.css";
 export default function Footer() {
   return (
@@ -11,6 +12,9 @@ export default function Footer() {
               <br />
               Thiyagadurgam.
             </p>
+            <p className="flex gap-2">
+              <PhoneCallIcon size={20} /> <a className="text-white no-underline" href="tel:6380411427">6380411427</a>
+            </p>
           </div>
           <div className="col-lg-4">
             <h3>Approach Me</h3>
@@ -22,7 +26,7 @@ export default function Footer() {
                   height={30}
                   width={30}
                 />
-                <a href="">instagram</a>
+                <a href="https://www.instagram.com/syed_javith_03/">instagram</a>
               </li>
               <li>
                 <img
@@ -31,7 +35,7 @@ export default function Footer() {
                   height={30}
                   width={30}
                 />
-                <a href="">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/syed-javith-r-93500a249/">LinkedIn</a>
               </li>
               <li>
                 <img
@@ -40,7 +44,7 @@ export default function Footer() {
                   height={30}
                   width={30}
                 />
-                <a href="">WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=6380411427">WhatsApp</a>
               </li>
             </ul>
           </div>
