@@ -1,23 +1,22 @@
 import React from 'react'
 import "./Card.css"
-const Card = () => {
+const Card = ({title , description , link}) => {
   return (
+    <div className="col-lg-4 p-8">
     <div className = "project shadow-xl">
-    <img className="object-fit-contain" src={require("../../../assets/images/projects/hackoverflowv3.png")} alt=""/>
+    <img className="object-fit-contain" src={require(`../../../assets/images/projects/${title.toLowerCase()}.png`)} alt=""/>
     <div className="card-content">
       <h2>
-        Card Heading
+        {title}
       </h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.
+        {description}
       </p>
-      <a href="#" className="button refer">
-        Find out more 
-        <span className="material-symbols-outlined">
-        &#10140;
-        </span>
+      <a href={link} target='blank' className="button refer">
+        Find out more <span className="material-symbols-outlined">&#10140;</span>
       </a>
     </div>
+  </div>
   </div>
   )
 }

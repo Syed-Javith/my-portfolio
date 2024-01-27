@@ -12,11 +12,12 @@ export const data = [
         icons : ["mysql","mongodb","postgres"]
     },
     {
+        name : "Tools",
+        icons : [ "git" , "postman" , "uipath"]
+    },
+    {
         name : "Programming",
         icons : ["c","c++","java","python","typescript"]
     },
-    {
-        name : "Tools",
-        icons : [ "git" , "postman" ]
-    }
+   
 ]

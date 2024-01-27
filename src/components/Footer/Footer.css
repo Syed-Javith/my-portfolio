@@ -1,0 +1,19 @@
+footer .social li {
+    display: flex;
+    gap: 1rem;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (width < 800px) {
+    footer .row .col-lg-4 {
+        text-align: center;
+    }
+
+    footer .social li {
+        justify-content: center;
+    }
+}

@@ -1,71 +1,35 @@
-import React from 'react'
-import "./About.css"
+import React from "react";
+import "./About.css";
 const About = () => {
-    return (
-
-        <div id="about" className="timeline">
-        <div className="container left">
-          {/* <div className="date">15 Dec</div> */}
-          <i className="icon fa fa-home"></i>
-          <div className="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
+  return (
+    <div id="about"  className="education">
+      <h2 className="text-center text-violet-500 my-4">Education</h2>
+    <div className="timeline">
+      <div className="container left">
+        <i className="icon fa fa-home"></i>
+        <div className="content">
+          <h2>Schooling</h2>
+          <p>
+            I did my schooling from the A.K.T Academy Matric Higher Secondary
+            School ,Kallakurichi from my home town where I studied from primary upto Higher Secondary
+          </p>
         </div>
-        <div className="container right">
-          {/* <div className="date">22 Oct</div> */}
-          <i className="icon fa fa-gift"></i>
-          <div className="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
-        </div>
-        <div className="container left">
-          <div className="date">10 Jul</div>
-          <i className="icon fa fa-user"></i>
-          <div className="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
-        </div>
-        <div className="container right">
-          <div className="date">18 May</div>
-          <i className="icon fa fa-running"></i>
-          <div className="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
-        </div>
-        {/* <div className="container left">
-          <div className="date">10 Feb</div>
-          <i className="icon fa fa-cog"></i>
-          <div className="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
-        </div> */}
-        {/* <div className="container right">
-          <div class="date">01 Jan</div>
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-              Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-          </div>
-        </div> */}
       </div>
-    )
-}
+      <div className="container right">
+        <i className="icon fa fa-gift"></i>
+        <div className="content">
+          <h2>College - UG</h2>
+          <p>
+            I joined Rajalakshmi Engineering College ,a private
+            instituition in Chennai in the year 2021 where I opted for
+            Bachelor of Engineering in the field of Computer Science and
+            Engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+};
 
-export default About
+export default About;
