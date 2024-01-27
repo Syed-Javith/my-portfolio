@@ -10,13 +10,9 @@ export const project = [
     },
     {
         title : "Student Portal" ,
-        description : `Student Portal App is a MERN Stack Web Application developed
-        with technologies such as React , MongoDB , Node , 
-        Express , D3.js and Boostrap which have dual login system for admin and students 
-        , It also enables the user to visualize the data as charts and built in Mail
-        system which makes the students to be aware of changes in their marks.
-        The user with Admin rights can edit , delete , and add marks of the student.
-        and also can create credetials for new users`,
+        description : `Student Portal App is a MERN Stack Web Application developed with technologies such as React,MongoDB,Node, 
+        Express,D3.js and Boostrap which have dual login system for admin and students , enables the user to visualize the data as charts and built in Mail system for mark notification.The Admin have rights to edit , delete , and add marks of the student.
+        and also create new users`,
         link : "https://github.com/Syed-Javith/mern-student-management.git"
     },
     {
