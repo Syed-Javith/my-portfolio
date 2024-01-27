@@ -12,7 +12,7 @@ export default function Footer() {
               <br />
               Thiyagadurgam.
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 text-center">
               <PhoneCallIcon size={20} /> <a className="text-white no-underline" href="tel:6380411427">6380411427</a>
             </p>
           </div>
