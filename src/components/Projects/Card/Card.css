@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    height: 36rem;
+    min-height: 36rem;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
