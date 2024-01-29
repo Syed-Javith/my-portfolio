@@ -1,7 +1,7 @@
 export const data = [
     {
         name : "Frontend",
-        icons : [ "html" , "css" , "javascript" , "react" , "angular"]
+        icons : [ "html" , "css" , "javascript" , "react" , "angular" , "nextjs" ]
     },
     {
         name : "Backend",
