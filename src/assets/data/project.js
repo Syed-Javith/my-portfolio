@@ -1,5 +1,12 @@
 export const project = [
     {
+        title : "NextJS Blog",
+        description : `NextJS Blog is a full stack blog project developed using the NextJS framework with
+        prisma ORM to connect to MongoDB and Tailwind to design UI, The Web App has CRUD operations on blogs and also 
+        login using both credentials and google with a Profile page for every users.`,
+        link : "https://rsj-blogs.vercel.app/"
+    },
+    {
         title : "HackOverflowV3" ,
         description : `HackOverflowV3 is a 24 hour hackathon organized by 
         the department of Computer Science and Engineering 
