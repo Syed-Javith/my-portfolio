@@ -22,7 +22,7 @@ const Card = ({title , description , link}) => {
     <img className="object-fit-contain" src={require(`../../../assets/images/projects/${title.toLowerCase()}.png`)} alt=""/>
     
     <div className="card-content">
-      <h2>
+      <h2 className="text-violet-600 font-extrabold">
         {title}
       </h2>
       <p>

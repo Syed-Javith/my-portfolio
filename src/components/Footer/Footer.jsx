@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-lg-4">
             <h3>Syed Javith</h3>
             <p>
-              Address : 2/492 , Melpoondithakka , <br /> Thirukovilur Road ,{" "}
+              <span className="font-bold">Address :</span> 2/492 , Melpoondithakka , <br /> Thirukovilur Road ,{" "}
               <br />
               Thiyagadurgam.
             </p>
