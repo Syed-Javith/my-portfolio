@@ -19,5 +19,8 @@ export const data = [
         name : "Programming",
         icons : ["c","c++","java","python","typescript"]
     },
-   
+    {
+        name : "Others",
+        icons : ["bootstrap","jquery","tailwind","graphql"]
+    },
 ]
