@@ -40,8 +40,8 @@ export const project = [
     //     `,
     //     link : "https://www.noshack.com/"
     // },
-     // {
-    //     title : "Recharge-2024",
+    //  {
+    //     title : "REC ICCDS",
     //     description : `Recharge is an Annual College Fest conducted Rajalakshmi
     //     Engineering College, Chennai.In this Full Stack website that handles 
     //     registration , payment etc., I contributed to its UI by building 
@@ -49,6 +49,11 @@ export const project = [
     //     with backend build on Django & Postgres`,
     //     link : ""
     // },
+    {
+        title : "Peernet",
+        description : `A basic prototype for Smart India Hackathon.`,
+        link : "https://github.com/Syed-Javith/sih"
+    },
     {
         title : "REC ICCDS",
         description : `A Frontend website for the International Conference on Computing and Data Science 
