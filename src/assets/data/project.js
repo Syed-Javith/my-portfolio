@@ -50,7 +50,7 @@ export const project = [
     //     link : ""
     // },
     {
-        title : "Peernet",
+        title : "SIH",
         description : `A basic prototype for Smart India Hackathon.`,
         link : "https://github.com/Syed-Javith/sih"
     },
