@@ -7,6 +7,11 @@ export const project = [
         link : "https://rsj-blogs.vercel.app/"
     },
     {
+        title : "Finance Tracker",
+        description : `Finance Tracker is a NextJS Application with firebase backend for providing the data and authentication, using this application the users can see their expenses and income and also visualize it using the chartJS for react which make it more inituitive.`,
+        link : "https://rsj-finance-tracker.vercel.app/"
+    },
+    {
         title : "HackOverflowV3" ,
         description : `HackOverflowV3 is a 24 hour hackathon organized by 
         the department of Computer Science and Engineering 
