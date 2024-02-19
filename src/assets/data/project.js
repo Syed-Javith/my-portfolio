@@ -1,5 +1,22 @@
 export const project = [
     {
+        title : "Recharge 24",
+        description : `Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 is set to provide students from across the nation a platform to showcase their talents and express themselves. Recharge'24 will feature an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.
+        Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 is set to provide students from across the nation a platform to showcase their talents and express themselves. 
+        Recharge'24 will feature an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.`,
+        link : "https://www.rechargefest.in/"
+    },
+    {
+        title : "Social Media Bot",
+        description : `Social Media Bot is developed using UIPath Studio
+        which automates our activity of posting same content across various 
+        social media platforms such as instagram , facebook , twitter etc.
+        This Automation Bot uses the credentials to login into user account 
+        , posts the content and provide a notification upon on completion
+        as a Short Message Service(SMS) using Twilio.`,
+        link : "https://github.com/Syed-Javith/Social-Media-Bot.git"
+    },
+    {
         title : "NextJS Blog",
         description : `NextJS Blog is a full stack blog project developed using the NextJS framework with
         prisma ORM to connect to MongoDB and Tailwind to design UI, The Web App has CRUD operations on blogs and also 
@@ -28,43 +45,9 @@ export const project = [
         link : "https://github.com/Syed-Javith/mern-student-management.git"
     },
     {
-        title : "Social Media Bot",
-        description : `Social Media Bot is developed using UIPath Studio
-        which automates our activity of posting same content across various 
-        social media platforms such as instagram , facebook , twitter etc.
-        This Automation Bot uses the credentials to login into user account 
-        , posts the content and provide a notification upon on completion
-        as a Short Message Service(SMS) using Twilio.`,
-        link : "https://github.com/Syed-Javith/Social-Media-Bot.git"
-    },
-    // {
-    //     title : "No Shack",
-    //     description : `I have also developed a website for the No Shack
-    //     Solutions , a developing Startup company built with students.
-    //     The WebPage is developed using React , Bootstrap and AOS
-    //     `,
-    //     link : "https://www.noshack.com/"
-    // },
-    //  {
-    //     title : "REC ICCDS",
-    //     description : `Recharge is an Annual College Fest conducted Rajalakshmi
-    //     Engineering College, Chennai.In this Full Stack website that handles 
-    //     registration , payment etc., I contributed to its UI by building 
-    //     the application using Next Js , Tailwind , ShadcnUI , zod , tanstack etc.
-    //     with backend build on Django & Postgres`,
-    //     link : ""
-    // },
-    {
         title : "SIH",
         description : `A basic prototype for Smart India Hackathon.`,
         link : "https://github.com/Syed-Javith/sih"
-    },
-    {
-        title : "REC ICCDS",
-        description : `A Frontend website for the International Conference on Computing and Data Science 
-        being hosted by Rajalaksmi Engineering College.The Website is built using HTML , CSS , Javascript along 
-        with Boostrap.`,
-        link : "https://rajalakshmi.org/iccds24/"
     },
     {
         title : "REC IEEE" ,
@@ -73,6 +56,14 @@ export const project = [
         each society of the REC IEEE association it includes interactive 
         animations.`,
         link : "https://rajalakshmi.org/ieee/"
-    }
+    },
+    {
+        title : "REC ICCDS",
+        description : `A Frontend website for the International Conference on Computing and Data Science 
+        being hosted by Rajalaksmi Engineering College.The Website is built using HTML , CSS , Javascript along 
+        with Boostrap.`,
+        link : "https://rajalakshmi.org/iccds24/"
+    },
+    
    
 ]
