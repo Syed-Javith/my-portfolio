@@ -1,9 +1,7 @@
 export const project = [
     {
         title : "Recharge 24",
-        description : `Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 is set to provide students from across the nation a platform to showcase their talents and express themselves. Recharge'24 will feature an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.
-        Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 is set to provide students from across the nation a platform to showcase their talents and express themselves. 
-        Recharge'24 will feature an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.`,
+        description : `Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 attracted students from across the nation a platform to showcase their talents and express themselves.Recharge'24 featured an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.I contributed for it development using the tech stacks such as NextJs,Tailwind.`,
         link : "https://www.rechargefest.in/"
     },
     {
