@@ -1,7 +1,12 @@
 export const project = [
     {
         title : "Recharge 24",
-        description : `Boasting over 100+ events, ranging from music and dance to sports and various other exciting genres, Recharge'24 attracted students from across the nation a platform to showcase their talents and express themselves.Recharge'24 featured an exciting lineup of celebrities, covering electrifying music performances from musical guests and DJs, as well as iconic personalities with a sports background.I contributed for it development using the tech stacks such as NextJs,Tailwind.`,
+        description : `Boasting over 100+ events, ranging from music and dance 
+        to sports and various other exciting genres, Recharge'24 attracted 
+        students from across the nation a platform to showcase their talents.Recharge'24 featured an exciting lineup 
+        of celebrities, covering electrifying music performances from musical guests and DJs,
+        and also personalities with a sports background.I contributed for it development 
+        using the tech stacks such as NextJs,Tailwind.`,
         link : "https://www.rechargefest.in/"
     },
     {
@@ -44,7 +49,10 @@ export const project = [
     },
     {
         title : "SIH",
-        description : `A basic prototype for Smart India Hackathon.`,
+        description : `A basic prototype for Smart India Hackathon.Here the user 
+        can share his code , link , tags and experience of the project to enable a 
+        peer learning from his/her friends and can collaborate with others.
+        In addition to this the admin user can add projects on behalf of the college to showcase talents.`,
         link : "https://github.com/Syed-Javith/sih"
     },
     {
