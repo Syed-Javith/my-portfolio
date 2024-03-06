@@ -46,6 +46,15 @@ export default function Footer() {
                 />
                 <a href="https://api.whatsapp.com/send?phone=6380411427">WhatsApp</a>
               </li>
+              <li>
+                <img
+                  src={require("../../assets/images/icons/git.png")}
+                  alt="git"
+                  height={30}
+                  width={30}
+                />
+                <a href="https://github.com/Syed-Javith/">GitHub</a>
+              </li>
             </ul>
           </div>
           <div className="col-lg-4 social">
