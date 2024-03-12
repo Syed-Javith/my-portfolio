@@ -23,4 +23,8 @@ export const data = [
         name : "Others",
         icons : ["bootstrap","jquery","tailwind","graphql"]
     },
+    {
+        name : "Familiar with",
+        icons : ["numpy","pandas","matplotlib"]
+    },
 ]
