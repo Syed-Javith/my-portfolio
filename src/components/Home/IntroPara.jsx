@@ -14,7 +14,7 @@ export default function IntroPara() {
           and projects and ultimately a way to connect with me through
           social media accounts.
         </p>
-        <a href="https://drive.google.com/uc?id=12KSejGFlag74u1nObkt7LySQ-XdIQjF7&export=download" download>
+        <a href="https://drive.google.com/uc?id=1r3_zt1age6UaK6UGYs3lJ5in9Pun91fP&export=download" download>
         <button className="bg-white p-2 rounded-lg text-violet-500 hover:opacity-85">
           Download My Resume
         </button>

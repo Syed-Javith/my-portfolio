@@ -20,11 +20,12 @@ export const data = [
         icons : ["c","c++","java","python","typescript"]
     },
     {
+        name : "ML",
+        icons : ["numpy","pandas","matplotlib","scikit"]
+    },
+    {
         name : "Others",
         icons : ["bootstrap","jquery","tailwind","graphql"]
     },
-    {
-        name : "Familiar with",
-        icons : ["numpy","pandas","matplotlib"]
-    },
+    
 ]
