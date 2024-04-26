@@ -17,7 +17,7 @@ const Home = () => {
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
-            src={require("../../assets/images/rsj.png")}
+            src={require("../../assets/images/rsj.jpg")}
             alt=""
             className="profile-pic h-[90%] rounded-[100%]"
           />

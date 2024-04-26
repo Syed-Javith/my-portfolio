@@ -10,6 +10,18 @@ export const project = [
         link : "https://www.rechargefest.in/"
     },
     {
+        title : "Student Portal" ,
+        description : `Student Portal App is a MERN Stack Web Application developed with technologies such as 
+        React,MongoDB,Node,Express,D3.js and Boostrap which have dual login system for admin and students , enables the user to visualize the data as charts and built in Mail system for mark notification.The Admin have rights to edit , delete , and add marks of the student.
+        and also create new users`,
+        link : "https://github.com/Syed-Javith/mern-student-management.git"
+    },
+    {
+        title : "Hospital Dashboard",
+        description : `The Hospital Analytics Dashboard is developed using Power BI to provide comprehensive insights into hospital operations. By analyzing inpatient and outpatient data, the dashboard offers valuable information on patient flow, resource utilization, and top case analysis. Through intuitive graphs and charts, stakeholders can visualize trends and prioritize areas for improvement, enabling informed decision-making and strategic planning for hospital management. With its user-friendly interface and customizable features, the dashboard serves as a vital tool in gaining insights.`,
+        link : "https://github.com/Syed-Javith/Hospital-Analytics.git"
+    },
+    {
         title : "Social Media Bot",
         description : `Social Media Bot is developed using UIPath Studio
         which automates our activity of posting same content across various 
@@ -28,7 +40,9 @@ export const project = [
     },
     {
         title : "Finance Tracker",
-        description : `Finance Tracker is a NextJS Application with firebase backend for providing the data and authentication, using this application the users can see their expenses and income and also visualize it using the chartJS for react which make it more inituitive.`,
+        description : `Finance Tracker is a NextJS Application with firebase backend for providing 
+        the data and authentication, using this application the users can see their expenses and income 
+        and also visualize it using the chartJS for react which make it more inituitive.`,
         link : "https://rsj-finance-tracker.vercel.app/"
     },
     {
@@ -40,13 +54,7 @@ export const project = [
          JavaScript Libraries.`,
          link : "https://hackoverflowv3.netlify.app/"
     },
-    {
-        title : "Student Portal" ,
-        description : `Student Portal App is a MERN Stack Web Application developed with technologies such as React,MongoDB,Node, 
-        Express,D3.js and Boostrap which have dual login system for admin and students , enables the user to visualize the data as charts and built in Mail system for mark notification.The Admin have rights to edit , delete , and add marks of the student.
-        and also create new users`,
-        link : "https://github.com/Syed-Javith/mern-student-management.git"
-    },
+   
     {
         title : "SIH",
         description : `A basic prototype for Smart India Hackathon.Here the user 
@@ -55,21 +63,21 @@ export const project = [
         In addition to this the admin user can add projects on behalf of the college to showcase talents.`,
         link : "https://github.com/Syed-Javith/sih"
     },
-    {
-        title : "REC IEEE" ,
-        description : `REC IEEE is a static webste for the use of IEEE branch
-        of Rajalakshmi Engineering College.It includes multiple pages for
-        each society of the REC IEEE association it includes interactive 
-        animations.`,
-        link : "https://rajalakshmi.org/ieee/"
-    },
-    {
-        title : "REC ICCDS",
-        description : `A Frontend website for the International Conference on Computing and Data Science 
-        being hosted by Rajalaksmi Engineering College.The Website is built using HTML , CSS , Javascript along 
-        with Boostrap.`,
-        link : "https://rajalakshmi.org/iccds24/"
-    },
+    // {
+    //     title : "REC IEEE" ,
+    //     description : `REC IEEE is a static webste for the use of IEEE branch
+    //     of Rajalakshmi Engineering College.It includes multiple pages for
+    //     each society of the REC IEEE association it includes interactive 
+    //     animations.`,
+    //     link : "https://rajalakshmi.org/ieee/"
+    // },
+    // {
+    //     title : "REC ICCDS",
+    //     description : `A Frontend website for the International Conference on Computing and Data Science 
+    //     being hosted by Rajalaksmi Engineering College.The Website is built using HTML , CSS , Javascript along 
+    //     with Boostrap.`,
+    //     link : "https://rajalakshmi.org/iccds24/"
+    // },
     
    
 ]
