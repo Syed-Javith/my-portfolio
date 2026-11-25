@@ -14,7 +14,7 @@ export default function Projects() {
           Featured Projects
         </h2>
         <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
-          AI developer tooling, multi-agent systems, full-stack web applications, and data platforms.
+          Enterprise architectures, multi-agent systems, full-stack applications, and developer tools.
         </p>
       </div>
 
@@ -27,6 +27,7 @@ export default function Projects() {
             description={p.description}
             link={p.link}
             tech={p.tech}
+            isInternal={p.isInternal}
             index={i}
           />
         ))}

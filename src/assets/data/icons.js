@@ -1,30 +1,34 @@
 export const data = [
-    {
-        name : "Languages",
-        icons : ["java", "typescript", "javascript", "python", "c", "c++"]
-    },
-    {
-        name : "Backend",
-        icons : ["Spring Boot", "REST APIs", "Microservices", "node", "express", "Hibernate/JPA", "php"]
-    },
-    {
-        name : "Databases",
-        icons : ["mysql", "postgres", "Redis", "mongodb"]
-    },
-    {
-        name : "Distributed Systems",
-        icons : ["Apache Kafka", "Event-Driven", "Resilience4j", "mTLS", "JWT"]
-    },
-    {
-        name : "Frontend",
-        icons : ["react", "nextjs", "tailwind", "html", "css", "bootstrap"]
-    },
-    {
-        name : "DevOps & Tools",
-        icons : ["Docker", "git", "postman", "Linux", "VS Code API"]
-    },
-    {
-        name : "AI & Data",
-        icons : ["LangGraph", "Vector RAG", "numpy", "pandas", "scikit", "uipath"]
-    }
+  {
+    name: "Languages",
+    icons: ["Java", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"]
+  },
+  {
+    name: "Backend & Frameworks",
+    icons: ["Spring Boot", "REST APIs", "Microservices", "Node.js", "Hibernate/JPA"]
+  },
+  {
+    name: "Frontend",
+    icons: ["React.js", "Tailwind CSS", "HTML", "CSS"]
+  },
+  {
+    name: "Databases & Caching",
+    icons: ["MySQL", "PostgreSQL", "Redis"]
+  },
+  {
+    name: "Messaging & Distributed",
+    icons: ["Apache Kafka", "Event-Driven", "Resilience4j"]
+  },
+  {
+    name: "Security & Protocols",
+    icons: ["Spring Security", "JWT", "mTLS"]
+  },
+  {
+    name: "DevOps & Infrastructure",
+    icons: ["Docker", "Docker Compose", "Linux", "Git"]
+  },
+  {
+    name: "AI & Orchestration",
+    icons: ["LangGraph", "Vector RAG", "LLMs"]
+  }
 ];
