@@ -2,22 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0;
-    margin: 0;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    background-color: #060911 !important;
+    color: #e2e8f0 !important;
     overflow-x: hidden;
-    --bs-navbar-active-color : #7d3aed
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 }
-h1 , h2 , h3 , .col{
-    overflow-y: hidden;
-    font-weight: bolder;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
-body{
-    background-color: #000!important;
-    color: white!important;
+
+::-webkit-scrollbar-track {
+  background: #060911;
 }
-.progress-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
+
+::-webkit-scrollbar-thumb {
+  background: #261f43;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Modern Glassmorphic Utilities */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(124, 58, 237, 0.25);
+  transform: translateY(-2px);
+}
+
+.glow-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.violet-gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 100;
+  background: transparent;
 }
