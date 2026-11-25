@@ -1,31 +1,30 @@
 export const data = [
     {
-        name : "Frontend",
-        icons : [ "html" , "css" , "javascript" , "react" , "angular" , "nextjs" ]
+        name : "Languages",
+        icons : ["java", "typescript", "javascript", "python", "c", "c++"]
     },
     {
         name : "Backend",
-        icons : [ "node" , "express" , "php"]
+        icons : ["Spring Boot", "REST APIs", "Microservices", "node", "express", "Hibernate/JPA", "php"]
     },
     {
         name : "Databases",
-        icons : ["mysql","mongodb","postgres"]
+        icons : ["mysql", "postgres", "Redis", "mongodb"]
     },
     {
-        name : "Tools",
-        icons : [ "git" , "postman" , "uipath"]
+        name : "Distributed Systems",
+        icons : ["Apache Kafka", "Event-Driven", "Resilience4j", "mTLS", "JWT"]
     },
     {
-        name : "Programming",
-        icons : ["c","c++","java","python","typescript"]
+        name : "Frontend",
+        icons : ["react", "nextjs", "tailwind", "html", "css", "bootstrap"]
     },
     {
-        name : "ML",
-        icons : ["numpy","pandas","matplotlib","scikit"]
+        name : "DevOps & Tools",
+        icons : ["Docker", "git", "postman", "Linux", "VS Code API"]
     },
     {
-        name : "Others",
-        icons : ["bootstrap","jquery","tailwind","graphql"]
-    },
-    
-]
+        name : "AI & Data",
+        icons : ["LangGraph", "Vector RAG", "numpy", "pandas", "scikit", "uipath"]
+    }
+];

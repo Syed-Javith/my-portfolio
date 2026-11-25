@@ -7,8 +7,8 @@ const VerticalRotateText = () => {
                 <div className="innerIam">
                     Hi All<br />
                     I am Syed Javith <br />
-                    This My Profile<br />
-                    built on React<br />
+                    Software Engineer @ Zoho<br />
+                    Backend & AI Developer<br />
                 </div>
             </b>
 
