@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileText, Sparkles } from 'lucide-react';
+import { ArrowRight, FileText, Mail } from 'lucide-react';
 
 export default function IntroPara() {
   return (
@@ -15,14 +15,13 @@ export default function IntroPara() {
 
       {/* Main Headline */}
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
-        Engineering resilient <br />
-        <span className="violet-gradient-text">distributed systems</span> & <br />
-        AI-powered solutions.
+        Backend <br />
+        <span className="violet-gradient-text">Developer</span>
       </h1>
 
       {/* Bio Paragraph */}
       <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl">
-        I am <strong className="text-white font-semibold">Syed Javith R</strong>, a backend engineer delivering production features, high-throughput microservices, and AI developer workflows. Focused on performance optimization, clean code, and cloud-native reliability.
+        I am <strong className="text-white font-semibold">Syed Javith R</strong>, a Backend Developer with 1.5+ years of production experience at Zoho Corporation, building high-throughput microservices, scalable APIs, and robust data layers using Java, Spring Boot, and SQL.
       </p>
 
       {/* Action CTA Buttons */}
@@ -31,7 +30,7 @@ export default function IntroPara() {
           href="#projects"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-semibold text-sm shadow-lg shadow-violet-600/30 transition-all hover:scale-105 active:scale-95"
         >
-          <span>Explore Projects</span>
+          <span>View Projects</span>
           <ArrowRight size={16} />
         </a>
 
@@ -49,8 +48,8 @@ export default function IntroPara() {
           href="#contact"
           className="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-slate-400 hover:text-violet-300 font-medium text-sm transition-colors"
         >
-          <Sparkles size={16} />
-          <span>Get in Touch</span>
+          <Mail size={16} />
+          <span>Contact</span>
         </a>
       </div>
     </div>

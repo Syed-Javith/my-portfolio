@@ -14,7 +14,7 @@ export default function Projects() {
           Featured Projects
         </h2>
         <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl mx-auto">
-          Enterprise architectures, multi-agent systems, full-stack applications, and developer tools.
+          Backend architectures, enterprise microservices, full-stack applications, and developer tools.
         </p>
       </div>
 

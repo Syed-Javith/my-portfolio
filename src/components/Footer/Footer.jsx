@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Mail, Phone, MapPin, Github, Linkedin, MessageCircle, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, FileText, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -20,15 +20,15 @@ export default function Footer() {
               <span className="font-bold text-white text-lg tracking-tight">Syed Javith R</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Software Engineer at Zoho Corporation specializing in high-throughput backend services, distributed systems, and AI developer productivity workflows.
+              Backend Developer at Zoho Corporation with experience in high-throughput enterprise services, microservices, and database optimization.
             </p>
             <div className="flex items-center gap-2 text-slate-400 text-xs font-mono">
               <MapPin size={15} className="text-violet-400 shrink-0" />
-              <span>Guduvancheri, Chengalpattu, Tamil Nadu - 603202</span>
+              <span>Guduvancheri, Chennai, Tamil Nadu - 603202</span>
             </div>
           </div>
 
-          {/* Col 2: Direct Contact */}
+          {/* Col 2: Direct Contact & Socials */}
           <div className="md:col-span-4 space-y-3">
             <h4 className="text-sm font-mono uppercase tracking-wider text-slate-300 font-semibold">
               Get in Touch
@@ -55,7 +55,7 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Social Icons */}
+            {/* Professional Profiles */}
             <div className="pt-2 flex items-center gap-2">
               <a
                 href="https://www.linkedin.com/in/syed-javith-r-93500a249/"
@@ -63,6 +63,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="p-2.5 rounded-xl bg-white/5 border border-white/5 text-slate-300 hover:text-white hover:border-violet-500/50 hover:bg-violet-950/30 transition-all"
+                title="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
@@ -72,17 +73,19 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
                 className="p-2.5 rounded-xl bg-white/5 border border-white/5 text-slate-300 hover:text-white hover:border-violet-500/50 hover:bg-violet-950/30 transition-all"
+                title="GitHub"
               >
                 <Github size={18} />
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=916380411427"
+                href="https://docs.google.com/document/d/1pn74xW_SWBOkZHUfbo4gGWzBJ5wiozoFUzfiZpgP4tI/edit?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="WhatsApp"
+                aria-label="Resume"
                 className="p-2.5 rounded-xl bg-white/5 border border-white/5 text-slate-300 hover:text-white hover:border-violet-500/50 hover:bg-violet-950/30 transition-all"
+                title="Resume"
               >
-                <MessageCircle size={18} />
+                <FileText size={18} />
               </a>
             </div>
           </div>
@@ -102,9 +105,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar - Clean copyright without React/Tailwind */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} Syed Javith R. Crafted with React & Tailwind CSS.</p>
+          <p>&copy; {new Date().getFullYear()} Syed Javith R. All rights reserved.</p>
           <button
             onClick={scrollToTop}
             className="flex items-center gap-1.5 text-slate-400 hover:text-white transition-colors"

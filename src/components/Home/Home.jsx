@@ -3,13 +3,13 @@ import './Home.css';
 import IntroPara from './IntroPara';
 import { lang } from '../../assets/data/lang';
 import Language from './Language';
-import { Database, Zap, Layers, Server } from 'lucide-react';
+import { Layers, Server, Cpu, Database } from 'lucide-react';
 
 const stats = [
-  { icon: Zap, label: 'Production Features', value: '25+' },
-  { icon: Database, label: 'Query Latency Cut', value: '70%' },
-  { icon: Server, label: 'Data Centers Centralized', value: '56' },
-  { icon: Layers, label: 'Experience at Zoho', value: '1.5+ Yrs' },
+  { icon: Layers, label: 'At Zoho Corporation', value: '1.5+ Yrs' },
+  { icon: Server, label: 'Primary Stack', value: 'Java & Spring' },
+  { icon: Cpu, label: 'Distributed Systems', value: 'Microservices' },
+  { icon: Database, label: 'Relational & Cache', value: 'SQL & Redis' },
 ];
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
               <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/10 text-left">
-                <p className="text-xs text-violet-400 font-mono font-medium">Member Technical Staff</p>
+                <p className="text-xs text-violet-400 font-mono font-medium">Backend Developer</p>
                 <p className="text-sm font-bold text-white">Zoho Corporation</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Metrics Ticker */}
+      {/* Metrics / Highlights Ticker */}
       <div
         className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl glass-panel border border-white/10 mb-12 shadow-xl"
         data-aos="fade-up"
@@ -57,7 +57,7 @@ export default function Home() {
               <div className="p-2 rounded-xl bg-violet-600/15 text-violet-400 mb-2">
                 <IconComponent size={20} />
               </div>
-              <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">{s.value}</span>
+              <span className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">{s.value}</span>
               <span className="text-xs sm:text-sm text-slate-400 font-medium mt-0.5">{s.label}</span>
             </div>
           );
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Known Languages */}
       <div className="flex flex-wrap items-center gap-3 pt-2" data-aos="fade-up">
-        <span className="text-xs font-mono uppercase tracking-wider text-slate-400 mr-2">Languages Spoken:</span>
+        <span className="text-xs font-mono uppercase tracking-wider text-slate-400 mr-2">Languages:</span>
         <div className="flex flex-wrap gap-2">
           {lang.map((l, i) => (
             <Language key={i} lang={l.lang} flag={l.flag} />
