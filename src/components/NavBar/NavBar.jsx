@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, FileText } from 'lucide-react';
+import { Menu, X, Github, Linkedin, FileText, Download } from 'lucide-react';
 import './NavBar.css';
 
 export default function NavBar() {
@@ -13,6 +13,8 @@ export default function NavBar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const resumeUrl = `${process.env.PUBLIC_URL}/Syed_Javith_R_Resume.pdf`;
 
   const navLinks = [
     { name: 'About', href: '#home' },
@@ -75,14 +77,25 @@ export default function NavBar() {
           >
             <Linkedin size={18} />
           </a>
+          {/* Open Resume PDF in new tab */}
           <a
-            href="https://docs.google.com/document/d/1pn74xW_SWBOkZHUfbo4gGWzBJ5wiozoFUzfiZpgP4tI/export?format=pdf"
+            href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs font-semibold bg-violet-600/90 hover:bg-violet-600 text-white px-3.5 py-2 rounded-xl shadow-sm shadow-violet-600/30 transition-all hover:scale-105"
+            title="Open Resume in new tab"
           >
             <FileText size={14} />
-            <span>CV</span>
+            <span>Resume</span>
+          </a>
+          {/* Download PDF button */}
+          <a
+            href={resumeUrl}
+            download="Syed_Javith_R_Resume.pdf"
+            className="p-2 text-slate-400 hover:text-white hover:bg-white/10 rounded-xl transition-all"
+            title="Download Resume PDF"
+          >
+            <Download size={16} />
           </a>
         </div>
 
@@ -109,33 +122,44 @@ export default function NavBar() {
               {link.name}
             </a>
           ))}
-          <div className="pt-3 border-t border-white/10 flex items-center justify-between">
-            <div className="flex gap-2">
+          <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
+            <div className="flex items-center justify-between">
+              <div className="flex gap-2">
+                <a
+                  href="https://github.com/Syed-Javith"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-slate-300 hover:text-white bg-white/5 rounded-lg"
+                >
+                  <Github size={18} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/syed-javith-r-93500a249/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-slate-300 hover:text-white bg-white/5 rounded-lg"
+                >
+                  <Linkedin size={18} />
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2 mt-1">
               <a
-                href="https://github.com/Syed-Javith"
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-slate-300 hover:text-white bg-white/5 rounded-lg"
+                className="text-xs text-center font-semibold bg-violet-600 text-white px-3 py-2.5 rounded-lg"
               >
-                <Github size={18} />
+                View Resume
               </a>
               <a
-                href="https://www.linkedin.com/in/syed-javith-r-93500a249/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-slate-300 hover:text-white bg-white/5 rounded-lg"
+                href={resumeUrl}
+                download="Syed_Javith_R_Resume.pdf"
+                className="text-xs text-center font-semibold bg-white/10 hover:bg-white/15 text-slate-200 px-3 py-2.5 rounded-lg"
               >
-                <Linkedin size={18} />
+                Download PDF
               </a>
             </div>
-            <a
-              href="https://docs.google.com/document/d/1pn74xW_SWBOkZHUfbo4gGWzBJ5wiozoFUzfiZpgP4tI/export?format=pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-semibold bg-violet-600 text-white px-4 py-2 rounded-lg"
-            >
-              Download Resume
-            </a>
           </div>
         </div>
       )}

@@ -1,7 +1,9 @@
 import React from 'react';
-import { ArrowRight, FileText, Mail } from 'lucide-react';
+import { ArrowRight, FileText, Download, Mail } from 'lucide-react';
 
 export default function IntroPara() {
+  const resumeUrl = `${process.env.PUBLIC_URL}/Syed_Javith_R_Resume.pdf`;
+
   return (
     <div className="space-y-6">
       {/* Status Pill */}
@@ -34,14 +36,26 @@ export default function IntroPara() {
           <ArrowRight size={16} />
         </a>
 
+        {/* View Resume in new page */}
         <a
-          href="https://docs.google.com/document/d/1pn74xW_SWBOkZHUfbo4gGWzBJ5wiozoFUzfiZpgP4tI/edit?usp=drivesdk"
+          href={resumeUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-sm border border-white/10 hover:border-violet-500/40 transition-all hover:scale-105 active:scale-95"
         >
           <FileText size={16} />
-          <span>Resume (Google Docs)</span>
+          <span>View Resume</span>
+        </a>
+
+        {/* Option to download PDF */}
+        <a
+          href={resumeUrl}
+          download="Syed_Javith_R_Resume.pdf"
+          className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white font-medium text-sm border border-white/5 hover:border-violet-500/30 transition-all hover:scale-105 active:scale-95"
+          title="Download Resume as PDF"
+        >
+          <Download size={16} />
+          <span>Download PDF</span>
         </a>
 
         <a

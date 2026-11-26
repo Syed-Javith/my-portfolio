@@ -7,6 +7,8 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const resumeUrl = `${process.env.PUBLIC_URL}/Syed_Javith_R_Resume.pdf`;
+
   return (
     <footer id="contact" className="relative pt-20 pb-12 border-t border-white/10 bg-slate-950/80 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -78,12 +80,12 @@ export default function Footer() {
                 <Github size={18} />
               </a>
               <a
-                href="https://docs.google.com/document/d/1pn74xW_SWBOkZHUfbo4gGWzBJ5wiozoFUzfiZpgP4tI/edit?usp=drivesdk"
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Resume"
                 className="p-2.5 rounded-xl bg-white/5 border border-white/5 text-slate-300 hover:text-white hover:border-violet-500/50 hover:bg-violet-950/30 transition-all"
-                title="Resume"
+                title="Open Resume PDF in new tab"
               >
                 <FileText size={18} />
               </a>
@@ -105,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar - Clean copyright without React/Tailwind */}
+        {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} Syed Javith R. All rights reserved.</p>
           <button
