@@ -1,12 +1,17 @@
 /**
- * Langflow API Client Service
- * Connects to DataStax Astra Langflow Cloud or local Docker Langflow instance.
+ * Chat API Client Service
+ * Connects to the Go Serverless API (`/api/chat`) on Vercel or local Go backend,
+ * with support for Langflow endpoints and graceful client-side fallback.
  */
 
-const API_URL = process.env.REACT_APP_LANGFLOW_API_URL;
+const API_URL =
+  process.env.REACT_APP_CHAT_API_URL ||
+  process.env.REACT_APP_LANGFLOW_API_URL ||
+  "/api/chat";
+
 const APPLICATION_TOKEN = process.env.REACT_APP_LANGFLOW_TOKEN;
 
-// Local fallback portfolio knowledge base for testing when the backend is offline
+// Local fallback portfolio knowledge base for offline testing
 const fallbackResponses = [
   {
     keywords: ["experience", "zoho", "work", "job", "career"],
@@ -41,7 +46,7 @@ const fallbackResponses = [
 ];
 
 export async function sendChatMessage(userMessage) {
-  // If DataStax / Langflow URL is configured, make the live API call
+  // Try the Go backend API endpoint first
   if (API_URL) {
     try {
       const headers = {
@@ -56,6 +61,7 @@ export async function sendChatMessage(userMessage) {
         method: "POST",
         headers,
         body: JSON.stringify({
+          message: userMessage,
           input_value: userMessage,
           output_type: "chat",
           input_type: "chat",
@@ -63,24 +69,23 @@ export async function sendChatMessage(userMessage) {
         })
       });
 
-      if (!response.ok) {
-        throw new Error(`Langflow API error: ${response.status} ${response.statusText}`);
-      }
+      if (response.ok) {
+        const data = await response.json();
 
-      const data = await response.json();
+        // Extract response from Go API or Langflow structure
+        const text =
+          data?.text ||
+          data?.outputs?.[0]?.outputs?.[0]?.results?.message?.text ||
+          data?.outputs?.[0]?.outputs?.[0]?.artifacts?.message ||
+          data?.result?.text ||
+          (typeof data === "string" ? data : null);
 
-      // Extract response from Langflow's nested structure
-      const text =
-        data?.outputs?.[0]?.outputs?.[0]?.results?.message?.text ||
-        data?.outputs?.[0]?.outputs?.[0]?.artifacts?.message ||
-        data?.result?.text ||
-        (typeof data === "string" ? data : null);
-
-      if (text) {
-        return { text, source: "langflow" };
+        if (text) {
+          return { text, source: data?.source || "go-gemini" };
+        }
       }
     } catch (error) {
-      console.warn("Langflow live request failed, falling back to local assistant:", error);
+      console.warn("API request failed, falling back to local assistant:", error);
     }
   }
 
