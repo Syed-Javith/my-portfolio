@@ -1,0 +1,108 @@
+{
+  "name": "Syed Javith Portfolio Assistant",
+  "description": "Interactive AI Assistant representing Syed Javith R (Backend Developer at Zoho Corporation) powered by Google Gemini 1.5 Flash.",
+  "data": {
+    "nodes": [
+      {
+        "id": "ChatInput-01",
+        "type": "ChatInput",
+        "position": { "x": 100, "y": 200 },
+        "data": {
+          "type": "ChatInput",
+          "node": {
+            "template": {
+              "input_value": {
+                "type": "str",
+                "required": true,
+                "placeholder": "Ask something about Syed's experience or projects...",
+                "value": ""
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "Prompt-01",
+        "type": "Prompt",
+        "position": { "x": 400, "y": 200 },
+        "data": {
+          "type": "Prompt",
+          "node": {
+            "template": {
+              "template": {
+                "type": "str",
+                "value": "You are the personal AI Portfolio Assistant representing Syed Javith R.\n\nAbout Syed Javith R:\n- Role: Software Engineer / Backend Developer at Zoho Corporation (Chennai, India)\n- Experience: 1.5+ years of full-time enterprise backend engineering\n- Specialization: Scalable backend architectures, microservices, REST APIs, database performance optimization, and distributed systems.\n- Core Tech Stack:\n  * Languages: Java, JavaScript, TypeScript, SQL, HTML, CSS\n  * Backend & Frameworks: Spring Boot, REST APIs, Microservices, Node.js, Hibernate/JPA\n  * Databases & Caching: MySQL, PostgreSQL, Redis\n  * Distributed & Security: Apache Kafka, Resilience4j, Spring Security, JWT, mTLS\n  * DevOps & Cloud: Docker, Docker Compose, Linux, Git\n- Education:\n  * B.E. Computer Science & Engineering from Rajalakshmi Engineering College (2021–2025) with CGPA 8.82 / 10\n  * AKT Academy Matric Hr. Sec. School (96.52%)\n- Key Projects:\n  * Deluge Code Generator: Multi-agent code generation pipeline in Java\n  * AI Release Manager: VS Code extension & CLI for automated release engineering\n  * ClinicalTrialFlow: Clinical trial management system with Zoho Catalyst\n  * Recharge 24, Student Portal, Hospital Analytics Dashboard, Finance Tracker\n- Contact:\n  * Email: syedjavith14@gmail.com\n  * Phone: +91 6380411427\n  * Location: Guduvancheri, Chennai, Tamil Nadu\n  * LinkedIn: linkedin.com/in/syed-javith-r-93500a249\n  * GitHub: github.com/Syed-Javith\n\nGuidelines for your response:\n1. Be polite, professional, and concise.\n2. Answer questions accurately based on Syed's background.\n3. If asked for his resume or contact, provide his email (syedjavith14@gmail.com) and direct them to the View Resume / Download PDF options on the portfolio.\n\nUser Question:\n{user_input}\n\nAssistant Response:"
+              },
+              "user_input": {
+                "type": "str",
+                "required": true
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "GoogleGenerativeAIModel-01",
+        "type": "GoogleGenerativeAIModel",
+        "position": { "x": 750, "y": 200 },
+        "data": {
+          "type": "GoogleGenerativeAIModel",
+          "node": {
+            "template": {
+              "model_name": {
+                "type": "str",
+                "value": "gemini-1.5-flash"
+              },
+              "google_api_key": {
+                "type": "str",
+                "required": true,
+                "password": true,
+                "placeholder": "Enter your Google Gemini API Key"
+              },
+              "temperature": {
+                "type": "float",
+                "value": 0.4
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "ChatOutput-01",
+        "type": "ChatOutput",
+        "position": { "x": 1100, "y": 200 },
+        "data": {
+          "type": "ChatOutput",
+          "node": {
+            "template": {
+              "input_value": {
+                "type": "str",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "ChatInput-01",
+        "target": "Prompt-01",
+        "sourceHandle": "message",
+        "targetHandle": "user_input"
+      },
+      {
+        "source": "Prompt-01",
+        "target": "GoogleGenerativeAIModel-01",
+        "sourceHandle": "prompt",
+        "targetHandle": "input_value"
+      },
+      {
+        "source": "GoogleGenerativeAIModel-01",
+        "target": "ChatOutput-01",
+        "sourceHandle": "text",
+        "targetHandle": "input_value"
+      }
+    ]
+  }
+}

@@ -10,6 +10,7 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import ChatWidget from './components/ChatWidget/ChatWidget';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,8 @@ function App() {
       <Skills />
       <Projects />
       <Footer />
+      {/* Floating AI Assistant Powered by Langflow & Gemini */}
+      <ChatWidget />
     </div>
   );
 }

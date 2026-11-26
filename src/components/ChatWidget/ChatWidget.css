@@ -1,0 +1,14 @@
+/* Chat Widget Styles */
+.chat-widget-root {
+  position: relative;
+  z-index: 50;
+}
+
+.chat-messages-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-messages-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}

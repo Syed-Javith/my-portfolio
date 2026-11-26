@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  langflow:
+    image: langflowai/langflow:latest
+    container_name: portfolio-langflow
+    restart: unless-stopped
+    ports:
+      - "7860:7860"
+    environment:
+      - LANGFLOW_AUTO_SAVING=true
+      - LANGFLOW_HOST=0.0.0.0
+      - LANGFLOW_PORT=7860
+    volumes:
+      - langflow_data:/app/langflow
+
+volumes:
+  langflow_data:
