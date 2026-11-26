@@ -8,6 +8,8 @@ services:
     ports:
       - "7860:7860"
     environment:
+      - LANGFLOW_SUPERUSER=admin
+      - LANGFLOW_SUPERUSER_PASSWORD=admin
       - LANGFLOW_AUTO_SAVING=true
       - LANGFLOW_HOST=0.0.0.0
       - LANGFLOW_PORT=7860
